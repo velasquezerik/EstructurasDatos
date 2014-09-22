@@ -93,7 +93,7 @@ template<class T> class BinHeap
 			{
 				throw NoMemory();
 			}
-			return insertHeap(getRoot(),node);
+			return this->insert(node);
 		}
 		/**
 			@brief remueve un nodo en el monticulo

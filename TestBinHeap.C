@@ -22,8 +22,9 @@ int main()
 	//probamos el metodo de insertar
 	for(int i = 0;i < 10; i++)
 	{
-		BinNode<int>* Node = new BinNode<int>(i);
-		heap.insert(Node);
+		//BinNode<int>* Node = new BinNode<int>(i);
+		//heap.insert(Node);
+		heap.insert(i);
 	}
 	
 	//verificamos el metodo de buscar
