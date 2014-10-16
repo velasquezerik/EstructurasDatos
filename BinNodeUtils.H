@@ -865,11 +865,11 @@ BinNode<T> * removeFromAVL(BinNode<T> *& root, T & key)
 	
 	if(key < root->getData())
 	{
-		return removeFromABB(root->getL(),key);
+		return removeFromAVL(root->getL(),key);
 	}
 	if(key > root->getData())
 	{
-		return removeFromABB(root->getR(),key);
+		return removeFromAVL(root->getR(),key);
 	}
 	
 	if((root->getL()==NULL) and (root->getR()==NULL) )
